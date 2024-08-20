@@ -35,6 +35,9 @@ plugins:
 
 # MINIMAL MISTAKES SETTINGS
 minimal_mistakes_skin: 'neon'
+sass:
+  style: compressed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

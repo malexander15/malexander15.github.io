@@ -1,0 +1,22 @@
+---
+search: false
+---
+
+@charset "utf-8";
+
+.greedy-nav a{
+    color: #70ffdf !important;
+}
+
+.page__footer {
+    background: linear-gradient(#141010 15%, #b60e4e 20%, #70ffdf 100% );
+    text-shadow: 0px 3px 7px #141010;
+}
+
+.archive__subtitle{
+    color: #70ffdf !important;
+}
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
