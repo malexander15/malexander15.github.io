@@ -1,22 +1,85 @@
 ---
 search: false
 ---
+//This front matter MUST be at the top of the file or it will not work.
 
 @charset "utf-8";
-
-.greedy-nav a{
-    color: #70ffdf !important;
+.masthead{
+    border-image: linear-gradient(to right, #6e20e6, #fd18ad) 1;
 }
+
+.masthead__menu-item{
+    font-weight: 500;
+}
+
+.greedy-nav a {
+    color: #ffffff !important;
+    text-shadow: 1px 2px 1px #6e20e6;
+}
+
+#main{
+    max-width: 1440px !important
+}
+
+.sidebar {
+    text-align: center;
+}
+
+.sidebar img {
+    width: 20vw; /* 20% of the viewport width */
+    max-width: 150px; /* Set a maximum size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5%; /* Keep it circular */
+    border: 3px solid #6e20e6; /* Border color */
+    object-fit: cover; /* Ensure the image covers the circle */
+    box-shadow: 0px 3px 7px rgba(250, 249, 249, 0.2); /* Optional shadow */
+    margin-bottom: 1rem; /* Space below the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .sidebar img {
+        width: 30vw; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar img {
+        width: 40vw; /* Further adjust for very small screens */
+    }
+}
+
 
 .page__footer {
-    background: linear-gradient(#141010 15%, #b60e4e 20%, #70ffdf 100% );
+    background: linear-gradient(#141010 1%, #b60e4e 20%, #6e20e6 100% );
     text-shadow: 0px 3px 7px #141010;
+    margin-top: 0em !important;
 }
 
-.archive__subtitle{
-    color: #70ffdf !important;
+.archive {
+  position: relative;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  padding: 0 1em;
+  background-image: url('../images/cropped-1440-900-995141.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* This makes sure the image covers the entire div */
+  background-position: center center; /* Adjusts the starting position of the image */
+  height: 120vh;
+  opacity: 1;
+  border-radius: 1%;
+  border: 0.1rem solid #6e20e6;
+  box-shadow: 0px 3px 7px #868484;
 }
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+
+.archive__subtitle {
+    color: #ffffff !important;
+    text-shadow: 1px 2px 1px #6e20e6;
+}
+
+//All style overrides get applied above these import statements
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
