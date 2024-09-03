@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Exploring Lookbook and ViewComponent: A Developer's Experience"
-date:   2024-04-25 12:45:21 -0400
+date:   2024-08-25 12:45:21 -0400
 ---
 
 ## Introduction
