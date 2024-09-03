@@ -17,7 +17,6 @@ source "https://rubygems.org"
 # If you have any plugins, put them here!
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
-gem 'jekyll-admin', group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
