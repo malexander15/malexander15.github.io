@@ -43,15 +43,14 @@ defaults:
 
 
 # Build settings
-theme: minimal-mistakes-jekyll
-plugins:
-  - jekyll-feed
-
-# MINIMAL MISTAKES SETTINGS
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: 'neon'
 sass:
   style: compressed
 
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
